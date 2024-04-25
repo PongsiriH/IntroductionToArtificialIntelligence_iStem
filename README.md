@@ -1,4 +1,6 @@
 # IntroductionToArtificialIntelligence_iStem
 
-https://github.com/PongsiriH/IntroductionToArtificialIntelligence_iStem/assets/127966686/074ac49f-871e-4f1a-a61f-f5268e9ebdce
+
+The A* algorithm in section II:
+https://github.com/PongsiriH/IntroductionToArtificialIntelligence_iStem/assets/127966686/65561694-fddd-4acf-8d5d-1a08d82c2072
 
