@@ -137,7 +137,7 @@ class CrawlingRobotSimulator(object):
         legHt_b = 12
         legMass = 1
 
-        self.min_rightLeg_1a_angle = np.deg2rad(-0)
+        self.min_rightLeg_1a_angle = np.deg2rad(-10)
         self.max_rightLeg_1a_angle = np.deg2rad(10)
         self.min_rightLeg_1b_angle = np.deg2rad(-140)
         self.max_rightLeg_1b_angle = np.deg2rad(0)
