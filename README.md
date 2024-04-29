@@ -1,6 +1,16 @@
-# IntroductionToArtificialIntelligence_iStem
+# Artificial Intelligence with hands-on exercises: maze-solver, crawling robot and emotion recognition
+
+This is a supplmentary for the paper: (link to paper in the future). 
+
+# A* search
+...
+## Further reading
 
 
-The A* algorithm in section II:
-https://github.com/PongsiriH/IntroductionToArtificialIntelligence_iStem/assets/127966686/65561694-fddd-4acf-8d5d-1a08d82c2072
+# Q-learning/Reinforcement learning
+...
+## Further reading
 
+# Principal Components Analysis
+...
+## Further reading
