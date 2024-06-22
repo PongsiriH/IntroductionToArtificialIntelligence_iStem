@@ -6,12 +6,16 @@ import matplotlib.pyplot as plt
 from IPython.display import Video
 
 def get_neighbor_nodes(xy, direction_moves):
-    np.random.shuffle(direction_moves)
+    """
+    xy: the coordinate (x,y)
+    direction_moves: list of moves.
+    """
+    # np.random.shuffle(direction_moves)
     neighbors = np.add(xy, direction_moves)
     neighbors_tuple = [tuple(n) for n in neighbors]
     return neighbors_tuple
 
-def exceed_board(xy, board_size):
+def is_out_of_bounds(xy, board_size):
     x, y = xy
     return not (
         0 <= x < board_size[0] 
@@ -19,6 +23,8 @@ def exceed_board(xy, board_size):
     )
     
 def load_board(path_to_board):
+    """This function load board from image by the given path.
+    """
     file = path_to_board
     board = Image.open(file)
     board = np.array(board, dtype='float').max(axis=2)
@@ -26,12 +32,17 @@ def load_board(path_to_board):
     board[board == 255] = 1e5
     return board
 
-def reconstruct_path(came_from, start, target):
+def reconstruct_path(parent_map, start, target):
+    """
+    Reconstructs the path by tracing the parent_map from the target node 
+    back to the starting node. This function return optimal path when used 
+    with both Dijkstra's and A* algorithms.
+    """
     current = target
     path = []
     while current != start:
         path.append(current)
-        current = came_from.get(current, None)
+        current = parent_map.get(current, None)
         if current is None:
             break
     path.append(start)
