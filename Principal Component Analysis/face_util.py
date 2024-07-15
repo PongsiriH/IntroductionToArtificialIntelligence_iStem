@@ -20,5 +20,7 @@ def plot_different_pcs(X, num_pcs, imsize, X_mean, X_std, principal_components):
     plt.show()
 
 def map_labels(labels):
+    """Dataset's label come in string of emotions... 
+    We want to use numbers so we can"""
     mapping = {'anger': 0, 'contempt': 1, 'disgust': 2, 'fear': 3, 'happy': 4, 'sadness': 5, 'surprise': 6}
     return [mapping[lbl] for lbl in labels]
