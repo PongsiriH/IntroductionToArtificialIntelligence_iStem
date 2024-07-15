@@ -50,7 +50,7 @@ def reconstruct_path(parent_map, start, target):
     path.append(target)
     return path
 
-def plot_board(board, xy_current=None, xy_starting=None, xy_target=None, frontier=None, came_from=None, linePath=None, return_frame=None, figsize=(4, 4)):
+def plot_board(board, xy_current=None, xy_starting=None, xy_target=None, frontier=None, parent_map=None, linePath=None, return_frame=None, figsize=(4, 4)):
     vmin, vmax = 0, 5e4
     cmap = plt.get_cmap('Pastel2').copy()
     cmap.set_over('white')  # unexplored nodes are set to 1e5 which is greater than 5e4
@@ -86,8 +86,8 @@ def plot_board(board, xy_current=None, xy_starting=None, xy_target=None, frontie
         plt.text(xy_starting[1], xy_starting[0], 'S', color='red', ha='center', va='center', fontsize=16, weight='bold')
     if xy_target: # Plot target position
         plt.text(xy_target[1], xy_target[0], 'G', color='red', ha='center', va='center', fontsize=16, weight='bold')
-    if came_from:
-        for (x0, y0), (x1, y1) in came_from.items():
+    if parent_map:
+        for (x0, y0), (x1, y1) in parent_map.items():
             plt.arrow(y0, x0, (y1-y0)/4, (x1-x0)/4, alpha=0.5, head_width=0.3, head_length=0.4, fc='blue', ec='blue')
         
     if linePath:
