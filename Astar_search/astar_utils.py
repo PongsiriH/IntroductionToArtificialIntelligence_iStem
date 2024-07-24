@@ -5,6 +5,11 @@ import cv2
 import matplotlib.pyplot as plt
 from IPython.display import Video
 
+def manhattan_distance(xy0, xy1):
+    """We will use Manhattan distance as the heuristic function."""
+    h = abs(xy0[0] - xy1[0]) + abs(xy0[1] - xy1[1])
+    return h
+
 def get_neighbor_nodes(xy, direction_moves):
     """
     xy: the coordinate (x,y)
@@ -105,13 +110,12 @@ def plot_board(board, xy_current=None, xy_starting=None, xy_target=None, frontie
         plt.close()
         return frame
 
-def create_video_from_frames(frames, output_filename, fps=2):
+def create_video_from_frames(frames, output_filename, fps=2, fourcc_codec='mp4v'):
     if not frames:
         raise ValueError("The frame list is empty.")
     
-    # Assume all frames are of the same shape as the first frame
     frame_size = frames[0].shape[:-1]
-    fourcc = cv2.VideoWriter_fourcc(*'avc1')
+    fourcc = cv2.VideoWriter_fourcc(*fourcc_codec)
     
     out = cv2.VideoWriter(output_filename, fourcc, fps, frame_size)
     
