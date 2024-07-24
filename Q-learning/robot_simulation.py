@@ -1,3 +1,7 @@
+"""
+Implementation of crawling robot in pymunk.
+"""
+
 import sys
 import numpy as np
 import pygame
