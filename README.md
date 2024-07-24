@@ -7,9 +7,13 @@ This aim to be a supplmentary for the paper: (link to paper in the future).
 This section describe how to use graph traversal algorithm to solve a maze game, in particular A* algorithm.
 It would be helpful to understand greedy best-first search (https://youtu.be/Uzraf9TYhjY) for this section.
 
+A* maze-solver:
+![A* algorithm](https://github.com/PongsiriH/IntroductionToArtificialIntelligence_iStem/blob/main/Astar_search/animation/compareAstar.gif)
+
 # Q-learning/Reinforcement learning
 This section introduces Q-learning, an algorithm that allows an *agent* to learn a sequence of *actions* from its *environment* without being explicitly instructed. The agent does not receive direct instructions but is *rewarded* when the crawling robot moves forward. Q-learning is applied and updated as rewards are given, enabling the robot to learn the optimal strategy for different levels of friction.
 
+Crawling robot after learning:
 ![crawling robot after learning](https://github.com/PongsiriH/IntroductionToArtificialIntelligence_iStem/blob/main/Q-learning/animate/crawlingRobot_fric0.05.gif)
 
 # Principal Components Analysis
