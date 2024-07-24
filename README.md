@@ -10,6 +10,8 @@ It would be helpful to understand greedy best-first search (https://youtu.be/Uzr
 # Q-learning/Reinforcement learning
 This section introduces Q-learning, an algorithm that allows an *agent* to learn a sequence of *actions* from its *environment* without being explicitly instructed. The agent does not receive direct instructions but is *rewarded* when the crawling robot moves forward. Q-learning is applied and updated as rewards are given, enabling the robot to learn the optimal strategy for different levels of friction.
 
+![crawling robot after learning](https://github.com/PongsiriH/IntroductionToArtificialIntelligence_iStem/blob/main/Q-learning/animate/crawlingRobot_fric0.05.gif)
+
 # Principal Components Analysis
 This section discusses the change of basis and how the same data can be represented differently.
 Eigenvalues and eigenvectors of the covariance matrix can be used as the *optimal* basis, a technique known as Principal Component Analysis (PCA). We then apply PCA to images of angry and happy faces.
