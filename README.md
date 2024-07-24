@@ -20,7 +20,7 @@ Crawling robot after learning: <br>
 This section discusses the change of basis and how the same data can be represented differently.
 Eigenvalues and eigenvectors of the covariance matrix can be used as the *optimal* basis, a technique known as Principal Component Analysis (PCA). We then apply PCA to images of angry and happy faces.
 
-We transform describe these faces using the PCA basis: <br>
+We transform describe these faces into PCA basis: <br>
 ![faces examples](https://github.com/PongsiriH/IntroductionToArtificialIntelligence_iStem/blob/main/Principal%20Component%20Analysis/figures/face-dataset-examples.png)
 
 The PCA basis seem to have capture underlying patterns behind the faces: <br>
