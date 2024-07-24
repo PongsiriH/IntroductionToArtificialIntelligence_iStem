@@ -14,4 +14,9 @@ This section introduces Q-learning, an algorithm that allows an *agent* to learn
 This section discusses the change of basis and how the same data can be represented differently.
 Eigenvalues and eigenvectors of the covariance matrix can be used as the *optimal* basis, a technique known as Principal Component Analysis (PCA). We then apply PCA to images of angry and happy faces.
 
-## Further reading
+# How to use this repository.
+`pip install -r requirements.txt`
+
+And run the notebook you likes.
+
+# Further reading
